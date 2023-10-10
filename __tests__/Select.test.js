@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Select from "./Select";
+import Select from "./react-library/src/Select";
 
 //verifier que le composant est bien rendu :
 
