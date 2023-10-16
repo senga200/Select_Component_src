@@ -1,6 +1,6 @@
 {
   "name": "react-library-senga",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "react select dropdown component",
   "main": "dist/index.js",
   "scripts": {
