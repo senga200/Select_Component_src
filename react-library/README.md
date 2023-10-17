@@ -22,10 +22,6 @@ install with yarn:
 yarn add react-library-senga
 ```
 
-## customization
-
-You have the ability to customize the behavior and appearance of the Select component. Here's how you can do it:
-
 ### using options
 
 You can pass an array of options to the options prop to define the possible choices in the dropdown menu. Each option should have a value and a label. Here's an example:
@@ -36,20 +32,16 @@ import React from 'react';
 import Select from 'react-library-senga';
 
 function MySelect(){
+  //customise your options
    const optionList = [
       {value: 'option1', label: 'Option 1'},
       {value: 'option2', label: 'Option 2'},
       {value: 'option3', label: 'Option 3'},
    ];
 
-  const [selectedOption, setSelectedOption] = React.useState(null);
-  
-
     return (
         <Select
         options={optionList}
-        value={selectedOption}
-        onChange={setSelectedOption}
         />
     );
 }
@@ -57,29 +49,4 @@ function MySelect(){
 export default MySelect;
 ```
 
-### using children
-
-You can also pass options as children to the Select component. Each option should have a value and a label. Here's an example:
-
-```jsx
-import React from 'react';
-import Select from 'react-library-senga';
-
-function MySelect(){
-  const [selectedOption, setSelectedOption] = React.useState(null);
-
-    return (
-        <Select
-        value={selectedOption}
-        onChange={setSelectedOption}
-        >
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </Select>
-    );
-}
-
-export default MySelect;
-```
 
