@@ -1,9 +1,9 @@
 import React from "react";
 
-function Select({ children, options, value, onChange, id, name }) {
+function Select({ children, options }) {
   return (
     <div className="selectComponent">
-      <select id={id} name={name} value={value} onChange={onChange}>
+      <select>
         <option value="">Select in dropdown list</option>
         {children ||
           (options &&
